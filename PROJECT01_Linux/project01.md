@@ -1,4 +1,6 @@
-# Linux Practice Project - Emmanuel
+# Dev Ops Training Projects - Darey.io 
+
+## Linux Practice Project - Emmanuel
 > A repository of screenshots of _**linux**_ commands studied on this project assignment\
 > The below commands have been practiced and displayed below.
 
