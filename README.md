@@ -9,9 +9,9 @@ Project Based Learning - Road to DevOps
 
 # Welcome To My DevOps Project
 
-![alt text](./PROJECT01_Linux/Images/devops.jpeg "DevOps")
+![](./PROJECT01_Linux/Images/devops.jpeg "DevOps")
 
-## Implements 32 Projects in DevOps
+## Implementing 32 Projects in DevOps
 
 
 * Project 1: Linux Practice Project
