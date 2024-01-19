@@ -1,4 +1,6 @@
-# Linux Project 
+# Dev Ops Training Projects - Darey.io  
+
+## Linux Project 
 
 This repository is a curated collection of commonly used Linux commands, serving as an excellent resource for gaining familiarity with their syntax and the Command Line Interface of a Linux system. 
 
