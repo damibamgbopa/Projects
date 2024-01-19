@@ -29,3 +29,4 @@ __It can also be like this__
 
 ## Displaying Code Snippets
 
+`console.log('Welcome to the future')`
