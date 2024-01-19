@@ -32,14 +32,9 @@ Once initialized, I proceeded to create a new text file in my working directory 
 ### Collaboration and Remote Repositories
 I created an account on [GitHub](https://github.com/) and set up a new repository named [DevOps]. After that, I pushed my local git repository to the newly created remote GitHub repository using the command `git remote add origin `, then set _**main**_ as the main branch using `git branch -M main`, and finally pushed the contents to the remote repository with `git push -u origin main`.
 
-![](./img/step4_collaboration.PNG)
+![](./Images/08.%20create_new_repo.png)
 
-- Now that my repository is on [github](https://github.com/) my colleague _Mark_ wishes to make changes to my text file
-- He can achieve this by cloning the remote git repository using the command below
-- `git clone https://github.com/itoroekpo/DevOps.git`
+- I cloned it
+- `git clone https://github.com/damibamgbopa/gitproject_test.git`
 
-![](./img/step5_cloning.PNG)
-
-- _You can see the result of the clone command below. The remote git repository has been cloned into directory named __Mark__ on the local machine_
-
-![](./img/step6_cloning_result.PNG)
+![](./Images/10.%20git_clone.png)
