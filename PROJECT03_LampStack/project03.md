@@ -9,7 +9,8 @@ Step 0 - Creating the Instance
 1. I've created a virtual server instance with Ubuntu Server OS using Elastic Compute Cloud (EC2). Screenshot below
 ![](<Images/02. AWS_instance.png>)
 2. I've connected to my EC2 instance using ssh with the following command: ssh -i "ProjectLAMP290124.pem" ubuntu@ec2-3-83-30-117.compute-1.amazonaws.com
-   - For my implementation, I'm using the Visual Studio terminal.
+
+For my implementation, I'm using the Visual Studio terminal.
 ![](<Images/03. Connecting_server.png>)
 Take a look at the screenshot of my connected instance below.
 ![](<Images/04. Connected_server.png>)
@@ -18,6 +19,7 @@ Take a look at the screenshot of my connected instance below.
 
 **Step 1** - Installing Apache and Updating the Firewall
 The Apache HTTP server stands as a titan in the realm of web server software, boasting a staggering 67% share of all web servers worldwide. Developed and maintained by the esteemed Apache Software Foundation, this open-source software is not only powerful but also freely available. 
+
 Here are the steps I took to install Apache:
 1. Kick things off by updating the list of packages in the package manager using the command sudo apt update.
 ![](<Images/05. sudo_apt_update.png>)
@@ -26,30 +28,30 @@ Here are the steps I took to install Apache:
 3. Ensure that apache2 is up and running by executing the command sudo systemctl status apache2.
 ![](<Images/07. verify_apache_status.png>)
 4. Let's ensure that TCP port 80 is wide open:
-   - Test it out with curl http://localhost:80
+* Test it out with curl http://localhost:80
    ![](<Images/08. port_status_01.png>)
-    - Also, try curl http://127.0.0.1:80
+* Also, try curl http://127.0.0.1:80
    ![](<Images/09. port_status_02.png>)
 
 5. Now, let's test the Apache HTTP server’s response to requests from the internet:
-   - Allowed inbound connection using http in AWS Security groups
+* Allowed inbound connection using http in AWS Security groups
    ![](<Images/12. allow_inbound.png>)
-   - The URL will be http://3.83.30.117:80!
+* The URL will be http://3.83.30.117:80!
    [](<Images/10. ipv4_address.png>)
    ![](<Images/11. default_webpage.png>)
 
 **Step 2** - Installing MySQL
 Now that a web server is up and running, I need to install a Database Management System (DBMS) to store and manage data for my site in a Relational Database. I installed MySQL using the steps below:
-    1	Install MySql using command sudo apt install mysql-server
-	2	When installation is complete, login to the MySQL console by typing sudo mysql
+1. Install MySql using command sudo apt install mysql-server
+2. When installation is complete, login to the MySQL console by typing sudo mysql
     ![](<Images/13. sudo_mysql.png>)
-	3	set password for root user to PassWord.1
-	•	ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+3. Set password for root user to PassWord.1
+* ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
     ![](<Images/14. set_pw.png>)
-	4	Exit the MySQL shell with the command exit
-	5	Start the interactive script by running sudo mysql_secure_installation
+4. Exit the MySQL shell with the command exit
+5. Start the interactive script by running sudo mysql_secure_installation
     ![](<Images/15. interact_script.png>)
-    6 Test login
+6. Test login
     ![](<Images/16. test_login.png>)
 
 
@@ -57,9 +59,10 @@ Now that a web server is up and running, I need to install a Database Management
 **Step 3** - Installing PHP
 
 Now that I've got Apache set up to serve my content and MySQL installed to handle my data, it's time to bring in the final piece of the puzzle: PHP. PHP will work its magic by processing code to deliver dynamic content to the end user. Along with the php package, I'll need php-mysql, a PHP module that facilitates communication with MySQL-based databases. Additionally, I'll require libapache2-mod-php to empower Apache in handling PHP files. It's all coming together for a seamless and powerful LAMP technology stack!
-	1	Install all 3 packages at once with the command sudo apt install php libapache2-mod-php php-mysql
+
+1. Install all 3 packages at once with the command sudo apt install php libapache2-mod-php php-mysql
     ![](<Images/17. install_php.png>)
-	2	Run php -v to confirm the php version.
+2. Run php -v to confirm the php version.
     ![](<Images/18. php_v.png>)
 
 
