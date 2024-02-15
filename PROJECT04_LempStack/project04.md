@@ -83,7 +83,7 @@ Follow the instructions outlined in the previous project for launching an Ubuntu
 
 - Create the root web directory for ProjectLEMP - `sudo mkdir /var/www/html/projectLEMP`
 - Create simple HTML file which Nginx will serve - `sudo nano /var/www/projectLEMP/index.html`, it's content should be 
-"<h1>Welcone to Darey.io, ProjectLEMP Nginx works</h1>"
+"<h1>Welcome to Darey.io, ProjectLEMP Nginx works</h1>"
 - Assign Ownership of Directory - `sudo chown -R $USER:$USER /var/www/html/projectLEMP`
 - Open config file - `sudo nano /etc/nginx/sites-available/projectLEMP`
 - Create a link - `sudo ln -s /etc/nginx/sites-available/projectLEMP /etc/nginx/sites-enabled/`
