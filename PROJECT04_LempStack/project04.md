@@ -105,7 +105,22 @@ Follow the instructions outlined in the previous project for launching an Ubuntu
 
 ### Step 6: Retrieving data from MySQL database with PHP
 
-Connect PHP with MySQL to retrieve and display data from the database. This step demonstrates the full functionality of the LEMP stack in serving dynamic web content.
+**Connect PHP with MySQL to retrieve and display data from the database. This step demonstrates the full functionality of the LEMP stack in serving dynamic web content.**
+
+- Connect to MySQL - `sudo mysql -p` - ![](<Images/23. connect_mysql2.png>)
+- Create Database - `CREATE DATABASE `lemp_database`;` - ![](<Images/24. Create_db.png>)
+- Create new user on DB - `CREATE USER 'Akon'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';` - ![](<Images/25. create_user.png>)
+- Grant Akon permissions on DB - `GRANT ALL ON lemp_database.* TO 'Akon'@'%';` - ![](<Images/26. grant_perm.png>)
+- Logout and login as Akon - `mysql -u Akon -p` - ![](<Images/27. akon_db.png>)
+- Show Databases - `SHOW DATABASES;` - ![](<Images/28. show_db.png>)
+- Create test table, name todo_list - `CREATE TABLE lemp_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));`
+- Insert data into table - `INSERT INTO lemp_database.todo_list (content) VALUES ("My first important item");`
+                           `INSERT INTO lemp_database.todo_list (content) VALUES ("My second important item");`
+                           `INSERT INTO lemp_database.todo_list (content) VALUES ("My third important item");`
+                           - ![](<Images/29. insert_line_db.png>)
+
+- Check data - `SELECT * FROM lemp_database.todo_list;` - ![](<Images/30. select_db.png>)
+- Create PHP script to connect DB  with content in todo_list - `nano /var/www/html/projectLEMP/todo_list.php` - ![](<Images/31. todo_list_php.png>)
 
 
 ## Conclusion
