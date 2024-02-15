@@ -61,6 +61,15 @@ Begin by updating the package lists and apt repositories, then install Nginx web
 
 Next, install MySQL as the database management system for storing application data. Secure the MySQL installation and verify its status.
 
+- `sudo apt install mysql-server` - ![](<Images/10. install_mysql.png>)
+- `sudo mysql` - ![](<Images/11. sudo_mysql.png>)
+- Run script to remove insecure default settings and lock down access to DBS, but first, set a password for the root user -
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';` - ![](<Images/12. alter_pwd.png>)
+- Exit Mysql - ![](<Images/13. exit_mysql.png>)
+- Interactive script - `sudo mysql_secure_installation` - ![](<Images/14. validate_password.png>)
+- Login to MySQL using PW - `sudo mysql -p` - ![](<Images/15. login_pw_change.png>)
+- Exit Mysql - ![](<Images/13. exit_mysql.png>)
+
 ### Step 4: Installing PHP
 
 Install PHP, enabling server-side functionality for web applications. PHP-FPM is used to integrate PHP with Nginx.
