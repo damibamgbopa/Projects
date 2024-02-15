@@ -25,7 +25,9 @@ The LEMP Stack is a collection of open-source software that works seamlessly tog
 ## Prerequisites
 
 - An AWS account with an Ubuntu EC2 instance.
+![](<Images/01. prerequisite_aws.png>)
 - Access to a terminal or virtual machine.
+![](<Images/02. connect_machine.png>)
 - Knowledge of SSH for connecting to the EC2 instance.
 
 
@@ -43,10 +45,17 @@ Let's dive into the practical implementation of the LEMP Stack.
 ### Step 1: Launch an Ubuntu Instance on AWS Console and SSH Into It
 
 Follow the instructions outlined in the previous project for launching an Ubuntu instance and connecting to it via SSH.
+![](<Images/03. ssh_ubuntu.png>)
 
 ### Step 2: Installing Nginx
 
 Begin by updating the package lists and apt repositories, then install Nginx web server. Don't forget to allow firewall access for Nginx and SSH.
+- `sudo apt update` - ![](<Images/04. install_nginx1.png>)
+- `sudo apt install nginx` - ![](<Images/05. install_nginx2.png>)
+- `sudo systemctl status nginx` - ![](<Images/06. status_nginx.png>)
+- Enabling inbound connection through port 80 - ![](<Images/07. inbound_conn.png>)
+- Access using curl - `curl http://localhost:80` - ![](<Images/08. Access_using_curl.png>)
+- Access from Internet - ![](<Images/09. web_interface.png>)
 
 ### Step 3: Installing MySQL
 
