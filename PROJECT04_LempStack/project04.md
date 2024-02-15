@@ -95,11 +95,15 @@ Follow the instructions outlined in the previous project for launching an Ubuntu
 ![](<Images/20. nginx_web.png>)
 
 
-### Step 6: Testing PHP with Nginx
+### Step 5: Testing PHP with Nginx
 
-Create a simple PHP file to test PHP processing with Nginx. This ensures that PHP is properly integrated and functioning within the LEMP stack.
+**Create a simple PHP file to test PHP processing with Nginx. This ensures that PHP is properly integrated and functioning within the LEMP stack.**
 
-### Step 7: Testing PHP and MySQL with Nginx (LEMP Stack)
+- Create PHP Test file - `nano /var/www/projectLEMP/info.php` - ![](<Images/21. php_test_file.png>)
+- Web View - ![](<Images/22. web_php_info.png>)
+- Remove info.php - `sudo rm /var/www/projectLEMP/info.php`
+
+### Step 6: Retrieving data from MySQL database with PHP
 
 Connect PHP with MySQL to retrieve and display data from the database. This step demonstrates the full functionality of the LEMP stack in serving dynamic web content.
 
