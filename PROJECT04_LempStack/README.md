@@ -1,7 +1,6 @@
 # Dev Ops Training Projects - Darey.io  
 
 # LEMP STACK IMPLEMENTATION
-![](Images/LEMP_Stack.webp)
 
 ## Introduction to LEMP Stack
 
