@@ -90,7 +90,7 @@ This script asks the user to enter a number, then checks if it's positive, negat
 **Example 2: The piece of code iterates through a list using a for loop:**
 
 #!/bin/bash
-# Example script to print numbers from 1 to 5 using a for loop
+#Example script to print numbers from 1 to 5 using a for loop
 for (( i=1; i<=5; i++ ))
 do
     echo $i
