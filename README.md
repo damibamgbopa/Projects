@@ -2,7 +2,7 @@
 Project Based Learning - Road to DevOps
 
 ## Tools Used
-* Amazon EC2 Instance - Ubuntu VM
+* Amazon EC2 Instance - Ubuntu VM / Azure VMs
 * GitHub
 * Visual Studio
 * Git CLI
