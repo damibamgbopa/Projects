@@ -93,7 +93,8 @@ Check MySQL status - `sudo systemctl status mysql`
 **Step 6: Creating a New User and Database on MySQL Server**
 In order for the MySQL client to be able to send requests to the MySQL server, we need to create a new user for the client on the server.
 
-- Login to MySQL server - `sudo mysql` - ![](<Images/08. login_server.png>)
+- Login to MySQL server - `sudo mysql` - 
+![](<Images/08. login_server.png>)
 - Create a new user - `CREATE USER 'ubuntu'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
 - Create a database -  `CREATE DATABASE project_06;`
 ![](<Images/10. db_user.png>)
@@ -106,12 +107,15 @@ In order for the MySQL client to be able to send requests to the MySQL server, w
 
 **Step 8: Configuring MySQL Server to Allow Remote Connections**
 
-- Edit configuration file for MySQL server to allow remote connections - `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf` - ![](<Images/13. bind_add.png>)
+- Edit configuration file for MySQL server to allow remote connections - `sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf` - 
+![](<Images/13. bind_add.png>)
 
 
 **Step 9: Connecting to MySQL Server from MySQL Client**
-- Connect from client - `mysql -u ubuntu -h 172.210.11.45 -p project_06` - ![](<Images/14. connect_from_client.png>)
-- Check connection state by querying databases - `show databases;` - ![](<Images/15. show_db.png>)
+- Connect from client - `mysql -u ubuntu -h 172.210.11.45 -p project_06` - 
+![](<Images/14. connect_from_client.png>)
+- Check connection state by querying databases - `show databases;` - 
+![](<Images/15. show_db.png>)
 
 ## Conclusion
 In conclusion, understanding client-server architecture with MySQL is crucial for efficient data management and application development. By grasping this concept, professionals can enhance data accessibility, security, and scalability, thereby meeting the evolving demands of modern computing. This project provides practical insights into deploying and managing MySQL within a client-server environment, empowering individuals to build robust and effective systems.
