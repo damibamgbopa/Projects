@@ -94,7 +94,7 @@ Check MySQL status - `sudo systemctl status mysql`
 In order for the MySQL client to be able to send requests to the MySQL server, we need to create a new user for the client on the server.
 
 - Login to MySQL server - `sudo mysql` - ![](<Images/08. login_server.png>)
-- Create a new user - `CREATE USER 'ubuntu'@'%' IDENTIFIED WITH mysql_native_password BY 'password';` - ![](<Images/09. new_user_ubuntu.png>)
+- Create a new user - `CREATE USER 'ubuntu'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
 - Create a database -  `CREATE DATABASE project_06;`
 ![](<Images/10. db_user.png>)
 
