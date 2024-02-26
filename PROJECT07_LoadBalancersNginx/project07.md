@@ -10,6 +10,8 @@ In the realm of web services, efficient distribution of tasks across multiple re
 
 Load balancing involves the equitable distribution of tasks among a cluster of servers, optimizing overall efficiency and resource utilization. It ensures that no single server becomes overloaded, thereby enhancing the responsiveness and availability of web services.
 
+![](Images/load_balancer.jpeg)
+
 ## Importance of Load Balancing
 
 In the contemporary landscape of IT and web services, load balancers are indispensable tools. They play a crucial role in ensuring the smooth operation and availability of applications, particularly in high-traffic scenarios. By evenly distributing network traffic across multiple servers, load balancers enhance performance, reliability, and scalability, thereby delivering an optimal user experience. Industries such as e-commerce, content delivery, and cloud computing rely heavily on load balancing to maintain robust online services.

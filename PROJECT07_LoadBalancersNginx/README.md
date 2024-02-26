@@ -10,6 +10,8 @@ In the realm of web services, efficient distribution of tasks across multiple re
 
 Load balancing involves the equitable distribution of tasks among a cluster of servers, optimizing overall efficiency and resource utilization. It ensures that no single server becomes overloaded, thereby enhancing the responsiveness and availability of web services.
 
+![](Images/load_balancer.jpeg)
+
 ## Tools Used
 * Amazon EC2 Instance - Ubuntu VM / Azure VMs
 * GitHub
