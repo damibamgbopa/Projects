@@ -20,3 +20,4 @@ Project Based Learning - Road to DevOps
 * Project 4: LEMP Stack Implementation
 * Project 5: Shell Scripting
 * Project 6: Understanding Client Server Architecture With MySQL As RDBMS
+* Project 7: Implememting Load Balancers With Nginx
