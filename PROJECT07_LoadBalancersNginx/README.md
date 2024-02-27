@@ -13,6 +13,6 @@ Load balancing involves the equitable distribution of tasks among a cluster of s
 ![](Images/load_balancer.jpeg)
 
 ## Tools Used
-* Amazon EC2 Instance - Ubuntu VM / Azure VMs
+* Amazon EC2 Instance - Ubuntu VM
 * GitHub
 * Visual Studio
