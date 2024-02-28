@@ -46,6 +46,7 @@ We will provision three EC2 instances: two for our webservers and one for the lo
 ## Step 3: Automating Webservers Configuration With Shell Script
 1. Create the script file - `touch install.sh`
 1. Paste the following code into the script file on webserver 1 and 2 instances to configure each web server - `sudo nano install.sh`
+```
     #!/bin/bash
 
     ####################################################################################################################
@@ -87,6 +88,7 @@ We will provision three EC2 instances: two for our webservers and one for the lo
            </html>" > /var/www/html/index.html
 
     sudo systemctl restart apache2
+```
 
 ![](<Images/04. script_oo.png>)
 
@@ -122,7 +124,7 @@ On our load balancer instance;
 
 1. Create the script file - `touch nginx_loadbalancer.sh`
 2. Open a file and paste the following shell script:
-
+```
 #!/bin/bash
 
     ######################################################################################################################
@@ -179,7 +181,7 @@ fi
 sudo nginx -t
 
 sudo systemctl restart nginx
-
+```
 
 
 ![](<Images/08. nginx_loadbalancer.png>)
