@@ -46,7 +46,7 @@ We will provision three EC2 instances: two for our webservers and one for the lo
 ## Step 3: Automating Webservers Configuration With Shell Script
 1. Create the script file - `touch install.sh`
 1. Paste the following code into the script file on webserver 1 and 2 instances to configure each web server - `sudo nano install.sh`
-#!/bin/bash
+    #!/bin/bash
 
     ####################################################################################################################
     ##### This automates the installation and configuring of apache webserver to listen on port 8000
