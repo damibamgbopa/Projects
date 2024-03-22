@@ -22,3 +22,4 @@ Project Based Learning - Road to DevOps
 * Project 6: Understanding Client Server Architecture With MySQL As RDBMS
 * Project 7: Implememting Load Balancers With Nginx
 * Project 8: Automating Loadbalancer Configuration With Shell scripting
+* Project 9: Implementing Wordpress Website With LVM Storage Management
