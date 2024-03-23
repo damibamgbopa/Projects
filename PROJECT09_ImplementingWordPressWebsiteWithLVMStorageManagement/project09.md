@@ -20,10 +20,10 @@ Leveraging LVM within WordPress isn't just about staying ahead; it's about redef
 
 ### Implementing Your WordPress Web Solution:
 Picture a three-tiered structure—your client, your web server (hosting WordPress), and your database server—all seamlessly connected for a smooth sailing experience.
+![](Images/Three-Tier-architecture.png)
 
 **Three-tier Architecture is a client-server software architecture pattern that comprise of 3 separate layers.**
 The 3-Tier Setup
-
 * A Laptop or PC to serve as a client
 * An EC2 Linux Server as a web server (This is where you will install WordPress)
 * An EC2 Linux server as a database (DB) serve
@@ -56,9 +56,11 @@ All devices in Linux reside in `/dev/` directory. Inspect it with `ls /dev/` and
 ![](<Images/09. install_lvm2.png>), ![](<Images/09. lvmdiskscan.png>)
 
 8. Use `sudo pvcreate` utility to mark each of 3 disks as physical volumes (PVs) to be used by LVM.
-    * `sudo pvcreate /dev/xvdf1`
-    * `sudo pvcreate /dev/xvdg1`
-    * `sudo pvcreate /dev/xvdh1`
+```
+    sudo pvcreate /dev/xvdf1
+    sudo pvcreate /dev/xvdg1
+    sudo pvcreate /dev/xvdh1
+```
 ![](<Images/10. sudo_pvcreate.png>)
  
 Verify that the physical volume has been created using `sudo pvs` - ![](<Images/11. sudo_pvs.png>)
@@ -146,9 +148,11 @@ All devices in Linux reside in `/dev/` directory. Inspect it with `ls /dev/` and
 ![](<Images/29. install_lvm2_2.png>),![](<Images/29. install_lvm2.png>)
 
 8. Use `sudo pvcreate` utility to mark each of 3 disks as physical volumes (PVs) to be used by LVM.
-    * `sudo pvcreate /dev/xvdf1`
-    * `sudo pvcreate /dev/xvdg1`
-    * `sudo pvcreate /dev/xvdh1`
+```
+    sudo pvcreate /dev/xvdf1
+    sudo pvcreate /dev/xvdg1
+    sudo pvcreate /dev/xvdh1
+```
 ![](<Images/30. sudo_pvcreate_2.png>)
  
 Verify that the physical volume has been created using `sudo pvs` - ![](<Images/31. sudo_pvs.png>)
